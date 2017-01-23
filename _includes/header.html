@@ -1,7 +1,10 @@
 
 <!-- Intro Start -->
-
 <header class="intro">
+    <video playsinline autoplay muted loop poster="{{ site.background-img }}" id="bgvid">
+        <source src="{{ site.background-vid }}.webm" type="video/webm">
+        <source src="{{ site.background-vid }}.mp4" type="video/mp4">
+    </video>
   <div class="intro-body">
     <div class="container">
       <div class="row">
@@ -10,8 +13,7 @@
             <h1 class="brand-heading">&nbsp;</h1>
             <span class="intro-text">{{ content }}</span>
             <h5>&nbsp;</h5>
-            <a href="#{{ site.pages_list['About'] }}" class="page-scroll">
-              <img class="img-me" src="{{site.baseurl}}{{ site.me-img }}" alt="">
+            <a href="#{{ site.pages_list['About'] }}" class="page-scroll img-me"> 
             </a>
           </div>
         </div>

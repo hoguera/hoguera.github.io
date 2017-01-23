@@ -71,16 +71,18 @@
 }
 
 .img-me {
+    display: block;
+    margin: auto;
     z-index: 100;
     left: 0;
     width: 100px;
     height: 100px;
-    margin-left: 0;
     border: 7px solid #f1f1f1;
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background-color: #f1f1f1;
+    background: url({{ site.me-img }}) bottom center no-repeat;
+    background-size: cover;
 }
 
 .timeline>li .timeline-image h4 {
@@ -120,7 +122,8 @@
 }
 
 .timeline .timeline-heading h4 {
-    margin-top: 0;
+    margin-top: 10px;
+    margin-bottom: 0px;
     color: inherit;
 }
 
@@ -148,6 +151,10 @@
         width: 41%;
         padding: 0 20px 20px 30px;
         text-align: right;
+    }
+
+    .timeline .timeline-heading h4 {
+        margin-top: 30px;
     }
 
     .timeline>li .timeline-image {
@@ -191,6 +198,10 @@
         padding: 0 20px 20px;
     }
 
+    .timeline .timeline-heading h4 {
+        margin-top: 60px;
+    }
+
     .timeline>li .timeline-image {
         width: 150px;
         height: 150px;
@@ -226,6 +237,10 @@
 
     .timeline>li .timeline-panel {
         padding: 0 20px 20px 100px;
+    }
+
+    .timeline .timeline-heading h4 {
+        margin-top: 70px;
     }
 
     .timeline>li .timeline-image {
