@@ -7,11 +7,10 @@
           <h1>{{ page.title }}</h1>
           {{ page.content | markdownify }}
 
-          hoho
+          {% assign photos = site.collections | where: "label", "photos" | first %}
 
-          {% for photo in site.photos %}
-              fofoo
-              {{ photo }}
+          {% for photo in photos.files %}
+              <img src={{ photo.path | remove_first: "_" }} />
           {% endfor %}
       </div>
   </div>

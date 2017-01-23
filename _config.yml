@@ -24,6 +24,10 @@ google-tracking-id: ""
 
 force-https: True
 
+collections:
+  photos:
+    title: Photos
+
 #############
 # HTML Head #
 #############
@@ -208,3 +212,4 @@ sass:
 
 gems:
   - jekyll-paginate
+
