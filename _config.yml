@@ -125,7 +125,7 @@ events:
   - date: "2014"
     description: "La Orquesta es invitada a tocar al Festival de Tango de Buenos Aires"
     image: "/img/hoguera/va2.jpg"
- - date: "2015"
+  - date: "2015"
     description: "La orquesta es seleccionada para tocar en las Eliminatorias del Mundial de Tango"
     image: "/img/hoguera/mundial.jpg"
   - date: "2015"
