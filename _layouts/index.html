@@ -15,7 +15,6 @@
 
       {% for page in site.pages %}
           {% if page.path contains "main/" %}
-              {{ page.path }}
               {% include {{ page.section-type | append: ".html"}} %}
           {% endif %}
       {% endfor %}
