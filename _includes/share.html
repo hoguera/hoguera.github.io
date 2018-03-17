@@ -1,7 +1,6 @@
 
 <!-- Share Buttons Start -->
 <div>
-    {{site.social.facebook}}
     <ul class="rrssb-buttons clearfix">
         {% if site.email-in-social %}
         <li class="rrssb-mail"><a href="mailto:?subject={{page.title}}&body={{site.url}}{{site.baseurl}}{{page.url}}" data-proofer-ignore>
@@ -13,11 +12,12 @@
         </li>
         {% endif %}
         {% for network_hash in site.social %}
-        {% for network in network_hash %}
-        <li class="rrssb-{{network[0]}}"><a href="{{ network[1].url }}" target="_blank">
+        {% for network in network_hash[1] %}
+
+        <li class="rrssb-{{network_hash | first}}"><a href="{{ network | last }}" target="_blank">
             <span class="rrssb-text">
-                <i class="fa fa-{{ network[0]}} fa-fw"></i>
-                {{network[0]}}
+                <i class="fa fa-{{ network_hash | first}} fa-fw"></i>
+                {{network_hash | first}}
             </span>
         </a>
         </li>

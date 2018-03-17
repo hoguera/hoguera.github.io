@@ -154,12 +154,12 @@ author_blurb_image: "/img/hoguera/va3.jpg"
 ##################
 
 social:
-  - facebook:
-    - url: "https://facebook.com/lahogueratango"
-  - instagram:
-    - url: "https://instagram.com/lahogueratango"
-  - rss:
-    - url: "/feed.xml"
+  facebook:
+    url: "https://facebook.com/lahogueratango"
+  instagram:
+    url: "https://instagram.com/lahogueratango"
+  rss:
+    url: "/feed.xml"
 
 ############
 # 404 page #

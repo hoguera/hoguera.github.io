@@ -2,8 +2,8 @@
 
 <ul class="list-inline social-buttons">
     {% for network_hash in site.social %}
-    {% for network in network_hash %}
-    <li><a href="{{ network[1].url }}" target="_blank"><i class="fa fa-{{ network[0]}} fa-fw"></i></a></li>
+    {% for network in network_hash[1] %}
+    <li><a href="{{ network | last }}" target="_blank"><i class="fa fa-{{ network_hash | first}} fa-fw"></i></a></li>
     {% endfor %}
     {% endfor %}
     {% if site.email-in-social %}
