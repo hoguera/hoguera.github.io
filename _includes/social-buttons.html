@@ -1,9 +1,14 @@
 <!-- Social Buttons Start -->
 
 <ul class="list-inline social-buttons">
-    {% for network in site.social %}
-    <li><a href="{{ network.url }}" target="_blank"><i class="fa fa-{{ network.title }} fa-fw"></i></a></li>
+    {% for network_hash in site.social %}
+    {% for network in network_hash %}
+    <li><a href="{{ network[1].url }}" target="_blank"><i class="fa fa-{{ network[0]}} fa-fw"></i></a></li>
     {% endfor %}
+    {% endfor %}
+    {% if site.email-in-social %}
+    <li><a href="mailto://{{site.email}}" target="_blank"><i class="fa fa-envelope fa-fw"></i></a></li>
+    {% endif %}
     {% if site.keybase-in-social %}
     <li><a href="https://keybase.io/{{site.keybase-username}}" target="_blank"><i class="fa fa-key fa-fw"></i></a></li>
     {% endif %}

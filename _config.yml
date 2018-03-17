@@ -96,18 +96,6 @@ post-preview-words: 96
 
 paginate: 5
 
-email-share: True
-fb-share: True
-twitter-share: False
-linkedin-share: False
-reddit-share: False
-google-plus-share: True
-tumblr-share: False
-pinterest-share: False
-pocket-share: False
-vkontakte-share: False
-instagram-share: True
-
 disqus-shortname: "hoguera"
 
 syntax-highlight: True
@@ -148,6 +136,7 @@ timeline-img: "/img/hoguera/va4.jpg"
 ###########
 
 email: "info@lahogueratango.com.ar"
+email-in-social: True
 
 ################
 # Author Blurb #
@@ -165,12 +154,12 @@ author_blurb_image: "/img/hoguera/va3.jpg"
 ##################
 
 social:
-  - title: "facebook"
-    url: "https://facebook.com/lahogueratango"
-  - title: "twitter"
-    url: "https://twitter.com/lahogueratango"
-  - title: "rss"
-    url: "/feed.xml"
+  - facebook:
+    - url: "https://facebook.com/lahogueratango"
+  - instagram:
+    - url: "https://instagram.com/lahogueratango"
+  - rss:
+    - url: "/feed.xml"
 
 ############
 # 404 page #
