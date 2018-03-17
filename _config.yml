@@ -58,8 +58,8 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "La Hoguera en Gira Europea 2017"
-  - text: "De Telos y Arrabales, de Buenos Aires para el mundo"
+  - text: "Proximamante gira europea 2019"
+  - text: "Coming soon European Tour 2019"
   - text: "Un sentimiento que se baila"
   - text: "Toda la pasion de antes, toda la magia de hoy"
   
