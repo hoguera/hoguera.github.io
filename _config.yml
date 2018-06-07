@@ -60,8 +60,6 @@ delete-delay: 5000
 lines: # You can add HTML Tags in the Text
   - text: "Próximamente gira europea 2019"
   - text: "Coming soon European Tour 2019"
-  - text: "Un sentimiento que se baila"
-  - text: "Toda la pasion de antes, toda la magia de hoy"
   
 me-img: "/img/hoguera/va5.jpg"
 
