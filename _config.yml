@@ -184,7 +184,7 @@ pages_list:
   Blog: 'latest-post'
   Agenda: 'agenda'
   Audio: 'audios'
-  # Fotos: 'photos'
+  Fotos: 'photos'
   Videos: 'videos'
   Bio: 'bio'
   Contacto: 'contact'
