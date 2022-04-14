@@ -27,6 +27,7 @@ force-https: True
 collections:
   photos:
     title: Photos
+    output: true
 
 #############
 # HTML Head #
