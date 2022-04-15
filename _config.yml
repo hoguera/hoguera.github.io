@@ -28,6 +28,7 @@ collections:
   photos:
     title: Photos
     output: true
+    alt: true
 
 #############
 # HTML Head #

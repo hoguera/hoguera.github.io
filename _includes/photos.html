@@ -1,23 +1,95 @@
 
 <!-- Section Start -->
 
-<section id="{{ page.section-id }}" class="container content-section text-center">
-  <div class="row">
-      <div class="col-md-12">
-          <h1>{{ page.title }}</h1>
-          {{ page.content | markdownify }}
+<section id="{{ page.section-id }}" class="container-fluid content-section text-center">
+    <div class="">
+        <h1>{{ page.title }}</h1>
+        
+        {{ page.content | markdownify }}
 
-          {% assign photos = site.collections | where: "label", "photos" | first %}
+        {% assign photos = site.collections | where: "label", "photos" | first %}
 
-          <div class="row">
-              {% for photo in photos.files %}
-                  <div class="col-md-6">
-                      <img src={{ photo.path | remove_first: "_" }} />
-                  </div>
-              {% endfor %}
-          </div>
-      </div>
-  </div>
+        <!-- Slider -->
+        <div class="swiper">
+            <!-- wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                {% for photo in photos.files %}
+                <div class="swiper-slide">
+                    <div class="swiper-zoom-container">
+                        <img 
+                            src='{{ photo.path | remove_first: "_" | uri_escape }}' 
+                            alt='{{ photo.path | remove: "_photos/" | remove: "/" | remove: photo.extname | replace: "-", " " }}'
+                            class="swiper-img"
+                        />
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <!-- pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        
+            <!-- navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+            <!-- scrollbar -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+        </div>
+    </div>
 </section>
+
+<style>
+    .swiper {
+        margin-top: 35px;
+    }
+    .swiper-slide {
+        align-self: center;
+        padding: 0;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: rgba(255,255,255,0.8);
+    }
+    .content-section > div img {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    @media screen and (min-width: 640px) {
+        .swiper {
+            margin-top: 50px;
+        }
+    }
+</style>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+        zoom: true,
+
+        lazy: true,
+
+        slidesPerView: 1,
+
+        freeMode: true,
+        
+        breakpoints: {
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    });
+</script>
 
 <!-- Section End -->
