@@ -182,7 +182,7 @@ keybase-in-footer: True
 # Sections shown in the index page
 
 pages_list:
-  Blog: 'latest-post'
+  # Blog: 'latest-post'
   Agenda: 'agenda'
   Audio: 'audios'
   Fotos: 'photos'
