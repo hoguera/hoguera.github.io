@@ -3,27 +3,18 @@ layout: null
 section-type: section
 section-id: videos
 title: Videos
-
-videos: [
-  ["OCk9iHCku2s","dsasas"],
-  ["OCk9iHCku2s","dsasas"],
-  ["OCk9iHCku2s","dsasas"],
-  ["OCk9iHCku2s","dsasas"],
-  ["OCk9iHCku2s","dsasas"],
-  ["OCk9iHCku2s","dsasas"]
-]
 ---
 
 <div class="videos-list">
 
-    {% for video in page.videos %}
+    {% for video in site.data.videos %}
 
     <article class="videos-list__item">
       <!-- youtube video box -->
       <div class="youtube__box">
         <div 
-          data-id="{{ video[0] }}"
-          data-img_alt="{{ video[1] }}"
+          data-id="{{ video.hash }}"
+          data-img_alt="{{ video.name }}"
           class="youtube__player"
         >
         </div>

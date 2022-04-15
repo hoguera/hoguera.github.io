@@ -35,8 +35,8 @@ collections:
 
 lang: "es"
 author: "La Hoguera Tango"
-title: "La Hoguera"
-description: "Pagina web de la Orquesta Tipica La Hoguera Tango."
+title: "La Hoguera Tango"
+description: "Pagina web de la Orquesta Típica La Hoguera Tango."
 keywords: "hoguera, orquesta, tango, orquesta tipica, la hoguera, buenos aires, milonga, arrabal, bandoneon, piano, chelo, violin"
 favicon: "/img/favicon.ico"
 
@@ -100,33 +100,6 @@ disqus-shortname: "hoguera"
 
 syntax-highlight: True
 
-############
-# Timeline #
-############
-
-events:
-  - date: "2017"
-    description: "Primer Gira Europea"
-    image: "/img/hoguera/tour2017.jpg"
-  - date: "2016"
-    description: "Primer Disco con Hernan Fernandez, Alejandro Guyot y Diego Dimartino como cantores invitados"
-    image: "/img/hoguera/disco.jpg"
-  - date: "2015"
-    description: "Orquesta Estable de la Milonga Queer"
-    image: "/img/hoguera/queer.jpg"
-  - date: "2015"
-    description: "La orquesta es seleccionada para tocar en las Eliminatorias del Mundial de Tango"
-    image: "/img/hoguera/mundial.jpg"
-  - date: "2014"
-    description: "La Orquesta es invitada a tocar al Festival de Tango de Buenos Aires"
-    image: "/img/hoguera/va2.jpg"
-  - date: "2013"
-    description: "Primeros conciertos en la Feria de San Telmo"
-    image: "/img/hoguera/telmo.jpg"
-  - date: "2012"
-    description: "Formacion de la orquesta"
-    image: "/img/hoguera/formacion.jpg"
-
 # First image of the Timeline
 
 timeline-img: "/img/hoguera/va4.jpg"
@@ -182,7 +155,7 @@ keybase-in-footer: True
 # Sections shown in the index page
 
 pages_list:
-  Blog: 'latest-post'
+  # Blog: 'latest-post'
   Agenda: 'agenda'
   Audio: 'audios'
   Fotos: 'photos'

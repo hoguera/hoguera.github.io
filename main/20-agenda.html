@@ -5,21 +5,19 @@ section-id: agenda
 title: Agenda
 ---
 
-### 4 de Agosto
 
-Festival FACAFF
+{% for event in site.data.events %}
 
-### 7 de Septiembre
+<div class="">
+  <div class="">
+    {{ event.date }}
+  </div>
+  <h3>
+    {{ event.location }}
+  </h3>
+</div>
 
-Teatro Roma, San Rafael, Mendoza
-
-### 12 de Septiembre
-
-Centro Cultural de la Coopperación
-
-### 29 de Noviembre
-
-Club Atlético Fernández Fierro (CAFF)
+{% endfor %}
 
 
 
