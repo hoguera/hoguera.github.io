@@ -323,11 +323,11 @@ video#bgvid {
 /* Added in { Personal } */
 ul.social-buttons li a {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 48px;
+    height: 48px;
     border-radius: 100%;
     font-size: 20px;
-    line-height: 40px;
+    line-height: 48px;
     outline: 0;
     color: $social-buttons-color;
     background-color: #222;
@@ -342,6 +342,30 @@ ul.social-buttons li a {
         color: #222;
         background-color: darken($social-buttons-color, 10%);
     }
+    i {
+        font-size: 1.2em;
+    }
+}
+
+aside.fixed-social-buttons {
+    display: block;
+    position: fixed;
+    top: 75%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: 999;
+    ul {
+        margin: 0;
+    }
+    li {
+        display: block;
+        margin: 12px;
+        padding: 0;
+    }
+}
+
+.email-link {
+    font-size: 1.2em;
 }
 
 footer {
