@@ -2,6 +2,7 @@
 ---
 
 .timeline {
+    margin-top: 75px;
     position: relative;
     padding: 0;
     list-style: none;
@@ -81,7 +82,7 @@
     border-radius: 100%;
     text-align: center;
     color: #fff;
-    background: url({{ site.me-img }}) bottom center no-repeat;
+    background: url('{{ site.me-img }}') bottom center no-repeat;
     background-size: cover;
 }
 

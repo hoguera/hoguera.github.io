@@ -23,17 +23,15 @@ html {
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 35px;
+h2 {
+    margin-bottom: 50px;
     text-transform: uppercase;
     font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+    @media(min-width:768px) {
+        margin-bottom: 75px;
+    }
 }
 
 /* Added in { Personal } */
@@ -48,11 +46,12 @@ h4 {
 }
 
 p {
-    margin: 0 0 25px;
+    margin: 0 auto 25px;
     font-size: 18px;
     line-height: 1.5;
+    max-width: 720px;
     @media(min-width:768px) {
-        margin: 0 0 35px;
+        margin: 0 auto 35px;
         font-size: 20px;
         line-height: 1.6;
     }
@@ -80,6 +79,10 @@ a {
 
 iframe {
     width: 100%;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0) 80%, rgba(0,0,0,0.8));
 }
 
 .navbar-custom {
@@ -172,7 +175,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url({{ site.background-img }}) no-repeat;
+    background: url('{{ site.background-img }}') no-repeat;
     background-size: cover; 
 }
 
@@ -249,11 +252,11 @@ video#bgvid {
     background-color: rgba(0,0,0, 0.8);
 }
 .content-section > div {
-    margin-top: 100px;
     padding-top: 100px;
+    padding-bottom: 100px;
     @media(min-width:767px) {
-        margin-top: 125px;
         padding-top: 125px;
+        padding-bottom: 125px;
     }
     /* Added in { Personal } for responsive images in posts and section contents */
     img {
@@ -266,7 +269,7 @@ video#bgvid {
     ul,
     ol {
         text-align: center;
-        margin: 0 0 25px;
+        margin-bottom: 25px;
         font-size: 18px;
         line-height: 1.5;
         list-style-position: inside;
@@ -342,10 +345,15 @@ ul.social-buttons li a {
 }
 
 footer {
-    padding: 50px 0;
+    height: 25vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
+    padding: 50px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0) 90%);
     p {
-        margin: 0;
+        margin: 0 auto;
     }
 }
 

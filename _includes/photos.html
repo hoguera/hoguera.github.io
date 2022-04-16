@@ -1,49 +1,50 @@
 
 <!-- Section Start -->
 
-<section id="{{ page.section-id }}" class="container-fluid content-section text-center">
-    <div class="">
-        <h1>{{ page.title }}</h1>
-        
-        {{ page.content | markdownify }}
+<section id="{{ page.section-id }}" class="container content-section text-center">
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
 
-        {% assign photos = site.collections | where: "label", "photos" | first %}
+            <h2>{{ page.title }}</h2>
+            
+            {{ page.content | markdownify }}
 
-        <!-- Slider -->
-        <div class="swiper">
-            <!-- wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                {% for photo in photos.files %}
-                <div class="swiper-slide">
-                    <div class="swiper-zoom-container">
-                        <img 
-                            src='{{ photo.path | remove_first: "_" | uri_escape }}' 
-                            alt='{{ photo.path | remove: "_photos/" | remove: "/" | remove: photo.extname | replace: "-", " " }}'
-                            class="swiper-img"
-                        />
+            {% assign photos = site.collections | where: "label", "photos" | first %}
+
+            <!-- Slider -->
+            <div class="swiper">
+                <!-- wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {% for photo in photos.files %}
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img 
+                                src='{{ photo.path | remove_first: "_" | uri_escape }}' 
+                                alt='{{ photo.path | remove: "_photos/" | remove: "/" | remove: photo.extname | replace: "-", " " }}'
+                                class="swiper-img"
+                            />
+                        </div>
                     </div>
+                    {% endfor %}
                 </div>
-                {% endfor %}
-            </div>
 
-            <!-- pagination -->
-            <!-- <div class="swiper-pagination"></div> -->
+                <!-- pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+            
+                <!-- navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
+                <!-- scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>
         
-            <!-- navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        
-            <!-- scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
         </div>
     </div>
 </section>
 
 <style>
-    .swiper {
-        margin-top: 35px;
-    }
     .swiper-slide {
         align-self: center;
         padding: 0;
@@ -56,11 +57,6 @@
         display: block;
         margin: 0;
         padding: 0;
-    }
-    @media screen and (min-width: 640px) {
-        .swiper {
-            margin-top: 50px;
-        }
     }
 </style>
 
