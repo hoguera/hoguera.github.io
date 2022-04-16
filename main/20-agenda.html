@@ -5,23 +5,55 @@ section-id: agenda
 title: Agenda
 ---
 
+<ul class="events-list">
+  {% for event in site.data.events %}
 
-{% for event in site.data.events %}
+  <li class="event-item">
+    <span class="event-item__date">
+      {{ event.date }}
+    </span>
+    <h3 class="event-item__title">
+      {{ event.name }}
+    </h3>
+    <span class="event-item__location">
+      {{ event.location }}
+    </span>
+    {% if event.link != "" %}
+      <a 
+        href="{{ event.link }}"
+        target="_blank"
+        rel="noreferrer"
+        class="event-item__link"
+      >
+        MÁS INFO
+      </a>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
 
-<div class="">
-  <div class="">
-    {{ event.date }}
-  </div>
-  <h3>
-    {{ event.location }}
-  </h3>
-</div>
+<style>
+  .event-item:not(:first-child) {
+    border-top: 1px solid rgba(255,255,255,0.3);
+  }
 
-{% endfor %}
+  .event-item {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 720px;
+    padding: 30px 0;
+    list-style: none;
+  }
 
+  .even-item__title {
+    font-size: 1.5rem;
+  }
 
-
-
+  .event-item__link {
+    display: block;
+    margin-top: 16px;
+  }
+</style>
 
 
 

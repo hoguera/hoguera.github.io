@@ -1,21 +1,16 @@
 # Events
 
-- date: "4 de Agosto"
-  location: "Festival FACAFF"
-  link: ""
-  is_active: true
+- date: "11 de Junio"
+  name: "Lanzamiento nuevo disco"
+  location: "Club Atlético Fernández Fierro"
+  link: "/#"
 
-- date: "7 de Septiembre"
-  location: "Teatro Roma, San Rafael, Mendoza"
-  link: ""
-  is_active: true
+- date: "11 de Junio"
+  name: "Lanzamiento nuevo disco"
+  location: "Club Atlético Fernández Fierro"
+  link: "/#"
 
-- date: "12 de Septiembre"
-  location: "Centro Cultural de la Coopperación"
-  link: ""
-  is_active: true
-
-- date: "29 de Noviembre"
-  location: "Club Atlético Fernández Fierro (CAFF)"
-  link: ""
-  is_active: true
+- date: "11 de Junio"
+  name: "Lanzamiento nuevo disco"
+  location: "Club Atlético Fernández Fierro"
+  link: "/#"
