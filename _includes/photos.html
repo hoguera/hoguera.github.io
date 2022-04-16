@@ -11,8 +11,8 @@
 
             {% assign photos = site.collections | where: "label", "photos" | first %}
 
-            <!-- Slider -->
-            <div class="swiper">
+            <!-- Swiper -->
+            <div class="swiper mySwiper1">
                 <!-- wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
@@ -39,6 +39,25 @@
                 <!-- scrollbar -->
                 <!-- <div class="swiper-scrollbar"></div> -->
             </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiperThumbs">
+                <!-- wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    {% for photo in photos.files %}
+                    <div class="swiper-slide">
+                        <div class="swiper-zoom-container">
+                            <img 
+                                src='{{ photo.path | remove_first: "_" | uri_escape }}' 
+                                alt='{{ photo.path | remove: "_photos/" | remove: "/" | remove: photo.extname | replace: "-", " " }}'
+                                class="swiper-img"
+                            />
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
         
         </div>
     </div>
@@ -61,29 +80,33 @@
 </style>
 
 <script>
-    const swiper = new Swiper('.swiper', {
-        zoom: true,
-
-        lazy: true,
-
-        slidesPerView: 1,
-
+    const swiperThumbs = new Swiper(".mySwiperThumbs", {
+        spaceBetween: 10,
+        slidesPerView: 7,
         freeMode: true,
-        
+        watchSlidesProgress: true,
+    });
+    
+    const swiper1 = new Swiper('.mySwiper1', {
+        zoom: true,
+        lazy: true,
+        slidesPerView: 1,
+        freeMode: true,
         breakpoints: {
           1024: {
             slidesPerView: 2,
             spaceBetween: 30,
           },
         },
-
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
         scrollbar: {
             el: '.swiper-scrollbar',
+        },
+        thumbs: {
+          swiper: swiperThumbs,
         },
     });
 </script>
