@@ -59,9 +59,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Próximamente gira europea 2019"
-  - text: "Coming soon European Tour 2019"
-  - text: "NOW Booking!!"
+  # - text: "Próximamente gira europea 2019"
+  # - text: "Coming soon European Tour 2019"
+  # - text: "NOW Booking!!"
   
 me-img: "/img/hoguera/va5.jpg"
 
