@@ -19,6 +19,7 @@ title: Agenda
       {{ event.location }}
     </span>
     {% if event.link != "" %}
+      <br/>
       <a 
         href="{{ event.link }}"
         target="_blank"
@@ -33,6 +34,10 @@ title: Agenda
 </ul>
 
 <style>
+  .events-list {
+    padding: 0;
+  }
+
   .event-item:not(:first-child) {
     border-top: 1px solid rgba(255,255,255,0.3);
   }
@@ -50,7 +55,7 @@ title: Agenda
   }
 
   .event-item__link {
-    display: block;
+    display: inline-block;
     margin-top: 16px;
   }
 </style>
