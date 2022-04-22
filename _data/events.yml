@@ -5,7 +5,8 @@
   location: "Club Atlético Fernández Fierro"
   link: "/#"
 
-- date: "11 de Junio"
-  name: "Lanzamiento nuevo disco"
-  location: "Club Atlético Fernández Fierro"
-  link: "/#"
+# Este es el esquema, lo podes copiar y pegar y sacarle los comentarios.
+# - date: ""
+#   name: ""
+#   location: ""
+#   link: "/#"
