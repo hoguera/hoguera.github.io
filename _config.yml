@@ -145,7 +145,7 @@ keybase-in-footer: True
 pages_list:
   # Blog: 'latest-post'
   Agenda: 'agenda'
-  Audio: 'musica'
+  Música: 'musica'
   Fotos: 'photos'
   Videos: 'videos'
   Bio: 'bio'
