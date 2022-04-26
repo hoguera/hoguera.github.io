@@ -117,7 +117,7 @@ $(window).scroll(toggleNavCollapse);$(function(){$("a.page-scroll").bind("click"
   <script type="text/javascript">
 
   var myQuotes =  new Array();
-  {% for line in site.lines %}
+  {% for line in site.data.cover-text-lines %}
     myQuotes.push("{{ line.text }}");
   {% endfor %}
 

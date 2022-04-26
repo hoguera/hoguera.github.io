@@ -1,0 +1,19 @@
+---
+---
+@import "variables";
+// @import "mixins";
+@import "grayscale";
+@import "agenda";
+@import "musica";
+@import "fotos";
+@import "videos";
+@import "social-links";
+@import "footer";
+
+
+h1.site-title {
+  font-size: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 700;
+}

@@ -10,7 +10,7 @@
       {% if site.email %}
         {% if site.email contains '@' %}
           {% assign newemail = site.email | split: '@' %}
-            <p>
+            <!-- <p>
             <script>
               function join_at_email(user, domain){
               return (user && domain)?(user + "@" + domain):"";
@@ -22,11 +22,24 @@
               + '</a>'
               );
               </script>
-            </p>
+            </p> -->
         {% else %}
-          <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+          <!-- <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p> -->
         {% endif %}
       {% endif %}
+      
+      <p>
+        <a 
+          href="mailto:{{ site.email }}"
+          target="_blank"
+          rel="noreferrer"
+          class="email-link"
+        >
+          {{ site.email }}
+        </a>
+      </p>
+
+       <!-- # include social-buttons.html  -->
 
     </div>
   </div>

@@ -27,6 +27,7 @@ force-https: True
 collections:
   photos:
     title: Photos
+    output: true
 
 #############
 # HTML Head #
@@ -34,8 +35,8 @@ collections:
 
 lang: "es"
 author: "La Hoguera Tango"
-title: "La Hoguera"
-description: "Pagina web de la Orquesta Tipica La Hoguera Tango."
+title: "La Hoguera Tango"
+description: "Pagina web de la Orquesta Típica La Hoguera Tango."
 keywords: "hoguera, orquesta, tango, orquesta tipica, la hoguera, buenos aires, milonga, arrabal, bandoneon, piano, chelo, violin"
 favicon: "/img/favicon.ico"
 
@@ -58,9 +59,9 @@ type-speed: 10
 start-delay: 200
 delete-delay: 5000
 lines: # You can add HTML Tags in the Text
-  - text: "Próximamente gira europea 2019"
-  - text: "Coming soon European Tour 2019"
-  - text: "NOW Booking!!"
+  # - text: "Próximamente gira europea 2019"
+  # - text: "Coming soon European Tour 2019"
+  # - text: "NOW Booking!!"
   
 me-img: "/img/hoguera/va5.jpg"
 
@@ -99,33 +100,6 @@ disqus-shortname: "hoguera"
 
 syntax-highlight: True
 
-############
-# Timeline #
-############
-
-events:
-  - date: "2012"
-    description: "Formacion de la orquesta"
-    image: "/img/hoguera/formacion.jpg"
-  - date: "2013"
-    description: "Primeros conciertos en la Feria de San Telmo"
-    image: "/img/hoguera/telmo.jpg"
-  - date: "2014"
-    description: "La Orquesta es invitada a tocar al Festival de Tango de Buenos Aires"
-    image: "/img/hoguera/va2.jpg"
-  - date: "2015"
-    description: "La orquesta es seleccionada para tocar en las Eliminatorias del Mundial de Tango"
-    image: "/img/hoguera/mundial.jpg"
-  - date: "2015"
-    description: "Orquesta Estable de la Milonga Queer"
-    image: "/img/hoguera/queer.jpg"
-  - date: "2016"
-    description: "Primer Disco con Hernan Fernandez, Alejandro Guyot y Diego Dimartino como cantores invitados"
-    image: "/img/hoguera/disco.jpg"
-  - date: "2017"
-    description: "Primer Gira Europea"
-    image: "/img/hoguera/tour2017.jpg"
-
 # First image of the Timeline
 
 timeline-img: "/img/hoguera/va4.jpg"
@@ -134,7 +108,7 @@ timeline-img: "/img/hoguera/va4.jpg"
 # Contact #
 ###########
 
-email: "info@lahogueratango.com.ar"
+email: "lahogueratango@gmail.com"
 email-in-social: True
 
 ################
@@ -147,18 +121,6 @@ email-in-social: True
 # if the author_blurb is not set, then this feature is skipped
 author_blurb: "La Hoguera es un septeto de tango formado en 2012 por músicos jóvenes, radicado en la Ciudad de Buenos Aires"
 author_blurb_image: "/img/hoguera/va3.jpg"
-
-##################
-# Social Buttons #
-##################
-
-social:
-  facebook:
-    url: "https://facebook.com/lahogueratango"
-  instagram:
-    url: "https://instagram.com/lahogueratango"
-  rss:
-    url: "/feed.xml"
 
 ############
 # 404 page #
@@ -181,9 +143,9 @@ keybase-in-footer: True
 # Sections shown in the index page
 
 pages_list:
-  Blog: 'latest-post'
+  # Blog: 'latest-post'
   Agenda: 'agenda'
-  Audio: 'audios'
+  Música: 'musica'
   Fotos: 'photos'
   Videos: 'videos'
   Bio: 'bio'
