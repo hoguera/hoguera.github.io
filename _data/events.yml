@@ -4,6 +4,11 @@
   name: "Lanzamiento nuevo disco"
   location: "Club Atlético Fernández Fierro"
   link: "/#"
+  
+  - date: "27 de Febrero"
+  name: "La Hoguera en Músicas Argentinas para el Mundo"
+  location: "Centro Cultural Kirchner"
+  link: "/#"
 
 # Este es el esquema, lo podes copiar y pegar y sacarle los comentarios.
 # - date: ""
