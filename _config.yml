@@ -63,7 +63,7 @@ lines: # You can add HTML Tags in the Text
   # - text: "Coming soon European Tour 2019"
   # - text: "NOW Booking!!"
   
-me-img: "/img/hoguera/webterraza"
+me-img: "/img/hoguera/webterraza.jpg"
 
 ##############################
 # Color the browser elements #
